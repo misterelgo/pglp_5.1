@@ -1,9 +1,10 @@
 package com.elgo;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 import java.util.ArrayList;
 
-public class PersonnelBuilder {
+public class PersonnelBuilder{
     //Necessary params for personnel
     private  String nom;
     private  String prenom;

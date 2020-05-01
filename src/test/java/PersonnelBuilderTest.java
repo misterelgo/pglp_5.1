@@ -1,3 +1,4 @@
+import java.io.*;
 import java.util.ArrayList;
 
 import com.elgo.Personnel;
@@ -7,7 +8,7 @@ import static org.junit.Assert.*;
 
 public class PersonnelBuilderTest {
     @Test
-    public void createPersonnel() {
+    public void createPersonnel() throws IOException {
         ArrayList<Integer> a1 = new ArrayList<Integer>();
         a1.add(06);
         a1.add(01);
@@ -20,5 +21,11 @@ public class PersonnelBuilderTest {
 
         pers1.print();
         pers3.print();
+
+        File f = new File("annuaire.txt");
+        FileOutputStream fos = new FileOutputStream(f);
+        ObjectOutputStream oos = new ObjectOutputStream(fos);
+        oos.writeObject(pers1);
+
     }
 }

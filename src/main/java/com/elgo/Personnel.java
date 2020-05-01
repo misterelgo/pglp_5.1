@@ -1,9 +1,10 @@
 package com.elgo;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 import java.util.ArrayList;
 
-public class Personnel implements InterfacePersonnel{
+public class Personnel implements InterfacePersonnel, Serializable {
     //Necessary params for personnel
     private  String nom;
     private  String prenom;
