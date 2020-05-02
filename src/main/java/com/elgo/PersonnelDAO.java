@@ -9,7 +9,6 @@ public class PersonnelDAO implements DAO_API<Personnel> {
 
     private List<Personnel> personnalList = new ArrayList<>();
     public PersonnelDAO(){
-        personnalList.add(new PersonnelBuilder("DIEYE", "Gora", 1).setDateDeNaissance(2020,9,19).getPersonnel());
         personnalList.add(new PersonnelBuilder("Gandrick", "Fly", 2).setDateDeNaissance(1999,7,10).getPersonnel());
     }
     @Override
