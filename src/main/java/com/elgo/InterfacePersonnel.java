@@ -1,5 +1,7 @@
 package com.elgo;
 
-public interface InterfacePersonnel {
+import java.io.Serializable;
+
+public interface InterfacePersonnel extends Serializable {
     void print();
 }

@@ -4,7 +4,7 @@ import java.io.Serializable;
 import java.time.LocalDate;
 import java.util.ArrayList;
 
-public class Personnel implements InterfacePersonnel, Serializable {
+public class Personnel implements InterfacePersonnel {
     //Necessary params for personnel
     private  String nom;
     private  String prenom;
@@ -20,6 +20,25 @@ public class Personnel implements InterfacePersonnel, Serializable {
         this.id = id;
         this.dateDeNaissance = dateDeNaissance;
         this.numTel = numTel;
+    }
+
+
+    // Setter
+    public void setNom(String newName) {
+        this.nom = newName;
+    }
+    // Setter
+    public void setPrenom(String newName) {
+        this.prenom = newName;
+    }
+
+    // Setter
+    public void setDateDeNaissance(LocalDate newDate) {
+        this.dateDeNaissance = newDate;
+    }
+    // Setter
+    public void setNumTel(ArrayList<Integer> newNumtel) {
+        this.numTel = newNumtel;
     }
 
     @Override
